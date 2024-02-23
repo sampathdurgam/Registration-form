@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+     <p id="description">Thank you for taking the time to help us improve the platform</p>
+     <form id="survey-form">
+     <fieldset>
+<label id="name-label">Name
+    <input id="name" type="text" name="survey-form" placeholder="Enter your name" required/>
+</label>
+<label id="email-label">Email
+  <input id="email" type="email" placeholder="Enter your Email" required/>
+  </label>
+<label id="number-label">Age(optional)
+  <input id="number" type="number" min="10" max="99" placeholder="Age"/>
+</label>
+<label>Which option best describes your current role?
+  <select id="dropdown" >
+    <option >Student</option>
+     <option>Full time Job</option>
+      <option>Full Time Learner</option>
+       <option>Prefer not to say</option>
+        <option>Other</option>
+   </select>
+</label>
+</fieldset>
+<fieldset>
+   <legend>Would you recommend freeCodeCamp to a friend?</legend>
+   <label><input id="definiteiy" type="radio" value="DEFINITELY" name="friend" checked/> Definitely</label>
+   <label><input id="maybe" type="radio" value="MAYBE" name="friend" /> Maybe</label>
+   <label><input id="not sure" type="radio" value="NOT SURE" name="friend" /> Not sure</label>
+</fieldset>
+<fieldset>
+  <label>What is your favorite feature of freeCodeCamp?
+      <select id="dropdown">
+        <options>Challenges</options>
+        <options>Projects</options>
+        <options>Community</options>
+        <options>Open source</options>
+      </select>
+  </label>
+  </fieldset>
+  <fieldset>
+    <legend>What would you like to see improved? (Check all that apply)</legend>
+  <label><input type="checkbox" value="front-end"/>Front-end Projects</label>
+  <label><input type="checkbox" value="back-end"/>Back-end Projects</label>
+  <label><input type="checkbox" value="data-visual"/>Data Visualization</label>
+  <label><input type="checkbox" value="additional"/>Additional Courses</label>
+  <label>Any comments or suggestions?
+    <textarea placeholder="Enter your comment here..."></textarea>
+  </label>
+</fieldset>
+<input id="submit" type="submit"/>
+  </form>
+  </body>
+  </html>
